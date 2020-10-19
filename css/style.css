@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+:root {
+  --color-primary: white;
+  -color-background-blue-black-1: #292d38;
+  --color-background-blue-black-2: rgb(30, 34, 45);
+  --color-background-blue-black-3: rgb(19, 23, 34);
+  --color-background-blue-black-4:  rgb(19, 23, 34, .95);
+  --color-sidebar:  rgb(19, 23, 34);
+  --color-sidebar-icon: rgb(42, 46, 57);
+  --color-ticker-green: rgb(0, 137, 123);
+  --color-ticker-red: rgb(229, 57, 53);
+  --color-ticker-black: rgb(12, 14, 21);
+  --color-ticker-white: rgb(202, 203, 204);
+  --color-alert-red: rgb(255, 74, 104);
+  --color-ticker-white: rgb(255, 255, 255);
+  --color-background-nav1-black-blue: rgb(30, 34, 45);
+  --color-button-nav1-white:  rgb(202, 203, 204);
+  --color-button-nav1-grey: rgb(67, 70, 81);
+  --color-background-nav1-search-grey: rgb(54, 58, 69);
+  --color-icon-nav1-blue: rgb(54, 58, 69);
+  --color-background-nav2-black-blue: rgb(42, 46, 57);
+  --color-text-nav2-white:  rgb(202, 203, 204);
+  --color-text-nav2-white-bold: rgb(208, 211, 220);
+  --color-icon-nav2-green: rgb(29, 161, 79);
+  --color-button-lightblue: rgb(25, 118, 210);
+  --color-button-darkblue: rgb(28, 71, 134); }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.headline-tickers {
+  flex: 0 0 80%;
+  height: 5rem;
+  color: var(--color-ticker-white);
+  background-color: var(--color-ticker-black); }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--color-sidebar);
+  flex-basis: 45px;
+  height: 400rem;
+  color: var(--color-sidebar-icon);
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-color: var(--color-sidebar-icon);
+  border-style: solid;
+  text-align: center; }
+
+.main-view {
+  flex: 0 1 100%; }
+
+.section-one {
+  height: 10rem;
+  background-color: var(--color-background-nav1-black-blue);
+  color: var(--color-button-nav1-white); }
+
+.section-two {
+  height: 10rem;
+  background-color: var(--color-background-nav2-black-blue);
+  color: var(--color-text-nav2-white-bold); }

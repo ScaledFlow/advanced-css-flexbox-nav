@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// CSS VARIABLE
+:root {
+  --color-primary: white;
+  -color-background-blue-black-1: rgb(41, 45, 56);
+  --color-background-blue-black-2: rgb(30, 34, 45);
+  --color-background-blue-black-3: rgb(19, 23, 34);
+  --color-background-blue-black-4:  rgb(19, 23, 34, .95);
+
+  // SIDEBAR
+  --color-sidebar:  rgb(19, 23, 34);
+  --color-sidebar-icon: rgb(42, 46, 57);
+
+  // TICKER
+  --color-ticker-green: rgb(0, 137, 123);
+  --color-ticker-red: rgb(229, 57, 53);
+  --color-ticker-black: rgb(12, 14, 21);
+  --color-ticker-white: rgb(202, 203, 204);
+
+  // MISC
+  --color-alert-red: rgb(255, 74, 104);
+  --color-ticker-white: rgb(255, 255, 255);
+
+  // NAVBAR ONE
+  --color-background-nav1-black-blue: rgb(30, 34, 45);
+  --color-button-nav1-white:  rgb(202, 203, 204);
+  --color-button-nav1-grey: rgb(67, 70, 81);
+  --color-background-nav1-search-grey: rgb(54, 58, 69);
+  --color-icon-nav1-blue: rgb(54, 58, 69);
+
+  // NAVBAR TWO
+  --color-background-nav2-black-blue: rgb(42, 46, 57);
+  --color-text-nav2-white:  rgb(202, 203, 204);
+  --color-text-nav2-white-bold: rgb(208, 211, 220);
+  --color-icon-nav2-green: rgb(29, 161, 79);
+  --color-button-lightblue: rgb(25, 118, 210);
+  --color-button-darkblue: rgb(28, 71, 134);
+}
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  // background-color: #131722;;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; 
+  // color: var(--color-primary);
+}
+
