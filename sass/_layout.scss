@@ -3,6 +3,7 @@
   // box-shadow: 0 2rem 6rem(rgba(0,0,0,.3));
   // min-height: 10rem;
   // width: 100%;
+  
 }
 
 .headline-tickers {
@@ -16,9 +17,17 @@
 }
 
 .sidebar {
+  // not working
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  // align-self: flex-end;
+
   background-color: var(--color-sidebar);
   flex-basis: 45px;
-  // position: sticky;
+
+
+
   height: 400rem;
   color: var(--color-sidebar-icon);
   border-left-width: 1px;
@@ -32,10 +41,12 @@
 
 .main-view {
   flex: 0 1 100%;
-
 }
 
 .section-one {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   font-size: 1.4rem;
   height: 5rem;
   background-color: var(--color-background-nav1-black-blue);
