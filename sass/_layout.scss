@@ -16,19 +16,17 @@
   display: flex;
 }
 
+.side-view {
+  flex: 0 0 45px;
+}
+
 .sidebar {
-  // not working
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  // align-self: flex-end;
-
+  position: fixed;
+  padding: 10px;
   background-color: var(--color-sidebar);
-  flex-basis: 45px;
+  // flex-basis: 45px;
 
-
-
-  height: 400rem;
+  height: 100%;
   color: var(--color-sidebar-icon);
   border-left-width: 1px;
   border-right-width: 0px;
