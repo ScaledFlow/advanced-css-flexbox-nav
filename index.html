@@ -13,20 +13,55 @@
     </head>
     <body>
         <div class="container">
-
           <div class="content">
-
             <main class="main-view">
    
               <header class="headline-tickers">
-                Header Part
+
+                Header
               </header>
 
               <section class="section-one">
-                Section One
+                <svg class="home__icon">
+                  <use href="img/sprite.svg#icon-delicious"></use>
+                </svg>
+
+                <form action="#" class="search">
+                  <input type="text" class="search__input" placeholder="Search">
+                  <button class="search__button">
+                    <svg class="search__icon">
+                      <use href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                  </button>
+                </form>
+
+                <nav class="user-nav">
+                  <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                      <use href="img/sprite.svg#icon-adjust"></use>  
+                    </svg>
+                  </div>
+                  <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                      <use href="img/sprite.svg#icon-light-bulb"></use>  
+                    </svg>
+                    <span class="user-nav__notification">3</span>
+                  </div>
+                  <div class="user-nav__user">
+                    <img src="img/bill.jpg" alt="" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">
+                      Bill
+                    </span>
+                  </div>
+                </nav>
               </section>
+
               <section class="section-two">
                 Section Two
+              </section>
+
+              <section class="section-three">
+                Section Three
               </section>
 
             </main>

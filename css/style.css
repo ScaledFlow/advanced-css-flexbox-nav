@@ -9,7 +9,7 @@
 
 :root {
   --color-primary: white;
-  -color-background-blue-black-1: #292d38;
+  --color-background-blue-black-1: rgb(41, 45, 56);
   --color-background-blue-black-2: rgb(30, 34, 45);
   --color-background-blue-black-3: rgb(19, 23, 34);
   --color-background-blue-black-4:  rgb(19, 23, 34, .95);
@@ -21,6 +21,13 @@
   --color-ticker-white: rgb(202, 203, 204);
   --color-alert-red: rgb(255, 74, 104);
   --color-ticker-white: rgb(255, 255, 255);
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
   --color-background-nav1-black-blue: rgb(30, 34, 45);
   --color-button-nav1-white:  rgb(202, 203, 204);
   --color-button-nav1-grey: rgb(67, 70, 81);
@@ -30,7 +37,7 @@
   --color-text-nav2-white:  rgb(202, 203, 204);
   --color-text-nav2-white-bold: rgb(208, 211, 220);
   --color-icon-nav2-green: rgb(29, 161, 79);
-  --color-button-lightblue: rgb(25, 118, 210);
+  --color-button-lightblue: rgb(33, 150, 243);
   --color-button-darkblue: rgb(28, 71, 134); }
 
 html {
@@ -43,8 +50,7 @@ body {
   line-height: 1.6; }
 
 .headline-tickers {
-  flex: 0 0 80%;
-  height: 5rem;
+  height: 6.5rem;
   color: var(--color-ticker-white);
   background-color: var(--color-ticker-black); }
 
@@ -68,11 +74,109 @@ body {
   flex: 0 1 100%; }
 
 .section-one {
-  height: 10rem;
+  font-size: 1.4rem;
+  height: 5rem;
   background-color: var(--color-background-nav1-black-blue);
-  color: var(--color-button-nav1-white); }
+  color: var(--color-button-nav1-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .section-two {
-  height: 10rem;
+  animation: blinkingText 1s infinite;
+  height: 5rem;
   background-color: var(--color-background-nav2-black-blue);
   color: var(--color-text-nav2-white-bold); }
+
+.section-three {
+  animation: blinkingText 1s infinite;
+  height: 60rem;
+  background-color: var(--color-background-blue-black-3);
+  color: var(--color-text-nav2-white-bold); }
+
+.home__icon {
+  height: 3rem;
+  width: 3rem;
+  color: var(--color-ticker-white);
+  margin-left: 5rem;
+  fill: var(--color-grey-dark-3);
+  fill: var(--color-button-lightblue); }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .4s;
+    margin-right: -3rem; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 400;
+      color: var(--color-grey-dark-3); }
+    .search__input::placeholder {
+      font-weight: 500;
+      color: var(--color-grey-dark-3); }
+  .search__input:focus + .search__button {
+    background-color: var(--color-grey-light-3); }
+  .search__button {
+    border: none;
+    background-color: var(--color-grey-light-3); }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-2); }
+
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .user-nav > *:hover {
+    background-color: var(--color-background-blue-black-3); }
+  .user-nav__icon-box {
+    position: relative; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--color-button-lightblue); }
+  .user-nav__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%; }
+  .user-nav__user-name {
+    margin-left: 1rem;
+    margin-right: 2rem; }

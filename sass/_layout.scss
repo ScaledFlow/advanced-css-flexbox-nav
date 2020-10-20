@@ -6,9 +6,7 @@
 }
 
 .headline-tickers {
-  flex: 0 0 80%;
-
-  height: 5rem;
+  height: 6.5rem;
   color: var(--color-ticker-white);
   background-color: var(--color-ticker-black);
 }
@@ -20,7 +18,7 @@
 .sidebar {
   background-color: var(--color-sidebar);
   flex-basis: 45px;
-
+  // position: sticky;
   height: 400rem;
   color: var(--color-sidebar-icon);
   border-left-width: 1px;
@@ -34,20 +32,29 @@
 
 .main-view {
   flex: 0 1 100%;
+
 }
 
 .section-one {
-  height: 10rem;
-  // flex: 0 1 100%;
+  font-size: 1.4rem;
+  height: 5rem;
   background-color: var(--color-background-nav1-black-blue);
   color: var(--color-button-nav1-white);
-  // flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section-two {
-  height: 10rem;
-  // flex: 0 1 100%;
+  animation: blinkingText 1s infinite;
+  height: 5rem;
   background-color:  var( --color-background-nav2-black-blue);
   color: var(--color-text-nav2-white-bold);
-  // flex: 1;
+}
+
+.section-three {
+  animation: blinkingText 1s infinite;
+  height: 60rem;
+  background-color:  var(--color-background-blue-black-3);
+  color: var(--color-text-nav2-white-bold);
 }
