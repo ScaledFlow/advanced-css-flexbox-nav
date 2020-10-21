@@ -35,6 +35,10 @@
   border-color: var(--color-sidebar-icon);
   border-style: solid;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-view {
@@ -62,7 +66,6 @@
 }
 
 .section-three {
-  animation: blinkingText 1s infinite;
   height: 60rem;
   background-color:  var(--color-background-blue-black-3);
   color: var(--color-text-nav2-white-bold);
